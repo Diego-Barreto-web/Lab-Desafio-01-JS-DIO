@@ -1,21 +1,15 @@
 var urlCompleta = window.location.href;
 let idString = urlCompleta.split('=')[1]
 let id = Number(idString)
-const total = []
-const totalStats = 0
 const limit = 151
 const buttonPrevious = document.getElementById('button-previous');
 const buttonNext = document.getElementById('button-next');
 
-    const url = `https://pokeapi.co/api/v2/pokemon/${id}`
-    const urlPrev = `https://pokeapi.co/api/v2/pokemon/${id-1}`
-    const urlNext = `https://pokeapi.co/api/v2/pokemon/${id+1}`
+const url = `https://pokeapi.co/api/v2/pokemon/${id}`
+const urlPrev = `https://pokeapi.co/api/v2/pokemon/${id-1}`
+const urlNext = `https://pokeapi.co/api/v2/pokemon/${id+1}`
 
-function pokemonDetailCovertHtml(pokemon, totalStats=0) {
-    for (let i = 0; i < 6; i++) {
-        total.push(pokemon.stats[i].base_stat)
-        totalStats += total[i]
-    }
+function pokemonDetailCovertHtml(pokemon) {
     return `
     <section class="name">${pokemon.name}</section>
     <section class="bodyDetail ${pokemon.types.map((typeSlot) => typeSlot.type.name.split(','))[0]}">
@@ -46,13 +40,13 @@ function pokemonDetailCovertHtml(pokemon, totalStats=0) {
                 <div>
                     <span>Base stats</span>
                     <ol>
-                        <li>HP      ${pokemon.stats[0].base_stat} <progress value="${pokemon.stats[0].base_stat}" max="400">${pokemon.stats[0].base_stat} %</progress></li>
-                        <li>Attack  ${pokemon.stats[1].base_stat} <progress value="${pokemon.stats[1].base_stat}" max="400">${pokemon.stats[1].base_stat} %</progress></li>
-                        <li>Defense ${pokemon.stats[2].base_stat} <progress value="${pokemon.stats[2].base_stat}" max="400">${pokemon.stats[2].base_stat} %</progress></li>
-                        <li>Sp. Atk ${pokemon.stats[3].base_stat} <progress value="${pokemon.stats[3].base_stat}" max="400">${pokemon.stats[3].base_stat} %</progress></li>
-                        <li>Sp. Def ${pokemon.stats[4].base_stat} <progress value="${pokemon.stats[4].base_stat}" max="400">${pokemon.stats[4].base_stat} %</progress></li>
-                        <li>Speed   ${pokemon.stats[5].base_stat} <progress value="${pokemon.stats[5].base_stat}" max="400">${pokemon.stats[5].base_stat} %</progress></li>
-                        <li>Total   ${totalStats} <progress value="${totalStats}" max="2400">${totalStats} %</progress></li>
+                        <li>HP      ${pokemon.stats[0].base_stat} <progress value="${pokemon.stats[0].base_stat}" max="200">${pokemon.stats[0].base_stat} %</progress></li>
+                        <li>Attack  ${pokemon.stats[1].base_stat} <progress value="${pokemon.stats[1].base_stat}" max="200">${pokemon.stats[1].base_stat} %</progress></li>
+                        <li>Defense ${pokemon.stats[2].base_stat} <progress value="${pokemon.stats[2].base_stat}" max="200">${pokemon.stats[2].base_stat} %</progress></li>
+                        <li>Sp. Atk ${pokemon.stats[3].base_stat} <progress value="${pokemon.stats[3].base_stat}" max="200">${pokemon.stats[3].base_stat} %</progress></li>
+                        <li>Sp. Def ${pokemon.stats[4].base_stat} <progress value="${pokemon.stats[4].base_stat}" max="200">${pokemon.stats[4].base_stat} %</progress></li>
+                        <li>Speed   ${pokemon.stats[5].base_stat} <progress value="${pokemon.stats[5].base_stat}" max="200">${pokemon.stats[5].base_stat} %</progress></li>
+                        <li>Total   ${pokemon.stats[0].base_stat+pokemon.stats[1].base_stat+pokemon.stats[2].base_stat+pokemon.stats[3].base_stat+pokemon.stats[4].base_stat+pokemon.stats[5].base_stat} <progress value="${pokemon.stats[0].base_stat+pokemon.stats[1].base_stat+pokemon.stats[2].base_stat+pokemon.stats[3].base_stat+pokemon.stats[4].base_stat+pokemon.stats[5].base_stat}" max="1200">${pokemon.stats[0].base_stat+pokemon.stats[1].base_stat+pokemon.stats[2].base_stat+pokemon.stats[3].base_stat+pokemon.stats[4].base_stat+pokemon.stats[5].base_stat} %</progress></li>
                     </ol>
                 </div>
                 <div class="space"></div>
