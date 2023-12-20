@@ -1,0 +1,255 @@
+#up {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: .200rem solid blue;
+}
+
+#up .name-types .pokemon-types ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0; /* Remova o espaçamento padrão da lista */
+}
+
+#up .name-types .pokemon-types ol li {
+    margin-right: 10px; /* Adapte a margem conforme necessário */
+    list-style: none;
+}
+
+#up .name-types {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Ajuste a largura conforme necessário */
+}
+
+#up .name-types .pokemon-name {
+    text-align: start;
+    padding-left: 5rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+#up .name-types .pokemon-types {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+#up .name-types .pokemon-number {
+    width: 20%; /* Ajuste a largura conforme necessário */
+    text-align: right;
+}
+
+#down {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#down .image {
+    width: 50%;
+}
+
+#down .stats {
+    text-align: end;
+    
+}
+
+#down .stats span {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+#down .space {
+    width: 20%;
+}
+
+.bodyDetail ol li {
+    list-style: none;
+    padding: .5rem 0rem 0rem 3.2rem;
+}
+
+.bodyDetail ol {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.normal {
+    background-color: #A6A877;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0;
+    border: 0;
+    text-transform: capitalize;
+}
+.grass {
+    background-color: #77C858;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0;
+    border: 0;
+    text-transform: capitalize;
+}
+.fire {
+    background-color: #EE7F30;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0;
+    border: 0;
+    text-transform: capitalize;
+}
+.water {
+    background-color: #678FEE;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0;
+    border: 0;
+}
+.electric {
+    background-color: #F7CF2E;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0;
+    border: 0;
+}
+.ice {
+    background-color: #98D5D7;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0;
+    border: 0;
+    text-transform: capitalize;
+}
+.ground {
+    background-color: #DFBF69;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0;
+    border: 0;
+    text-transform: capitalize;
+}
+.flying {
+    background-color: #A98FF0;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0;
+    border: 0;
+    text-transform: capitalize;
+}
+.poison {
+    background-color: #A040A0;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0;
+    border: 0;
+    text-transform: capitalize;
+}
+.fighting {
+    background-color: #BF3029;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0;
+    border: 0;
+    text-transform: capitalize;
+}
+.psychic {
+    background-color: #F65687;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0;
+    border: 0;
+    text-transform: capitalize;
+}
+.dark {
+    background-color: #725847;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0;
+    border: 0;
+    text-transform: capitalize;
+}
+.rock {
+    background-color: #B8A137;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0;
+    border: 0;
+    text-transform: capitalize;
+}
+.bug {
+    background-color: #A8B720;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0;
+    border: 0;
+    text-transform: capitalize;
+}
+.ghost {
+    background-color: #6E5896;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0;
+    border: 0;
+    text-transform: capitalize;
+}
+.steel {
+    background-color: #B9B7CF;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0;
+    border: 0;
+    text-transform: capitalize;
+}
+.dragon {
+    background-color: #6F38F6;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0;
+    border: 0;
+    text-transform: capitalize;
+}
+.fairy {
+    background-color: #F9AEC7;
+    color: #FFF;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 0;
+    border: 0;
+    text-transform: capitalize;
+}
+.name {
+    text-transform: capitalize;
+}
+button {
+    background-color: transparent;
+    border-style: none;
+}
+
+.pokemon-types ol li {
+    filter: brightness(1.1);
+    padding-left: 0;
+    margin-left: 3.2rem;
+}
