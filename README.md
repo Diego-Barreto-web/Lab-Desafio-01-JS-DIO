@@ -1,3 +1,7 @@
+*ABRIR COM LIVE SERVER OU HTTP-SERVER*
+
+
+
 Desenvolvi uma Pokedex com HTML, CSS e JavaScript como parte de um projeto de estudo, integrando a API REST PokeAPI. Nessa aplicação, priorizei a flexibilidade, permitindo que o usuário personalize a lista de Pokémon ajustando o limite desejado.
 
 A estrutura da interface, implementada em HTML e estilizada com CSS, foi projetada para oferecer uma experiência visual agradável. O JavaScript desempenhou um papel essencial ao facilitar a comunicação dinâmica com a API, possibilitando a obtenção de detalhes específicos de cada Pokémon, como nome, ID, imagem, tipos, HP, ataque, defesa, velocidade, sp. ataque e sp. defesa.
