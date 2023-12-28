@@ -33,10 +33,3 @@ pokeApi.getPokemons = (offset, limit) => {
         .then((pokemonsDetails) => pokemonsDetails)
 }
 
-// pokeApi.getDetails = (id) => {
-//     const params = new URLSearchParams(window.location.search);
-//     const id = params.get('id');
-//     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
-
-// }
-

@@ -4,13 +4,6 @@ const maxRecords = 151;
 const limit = 12;
 let offset = 0;
 
-// class IdPokemon{
-//     idPoke(id) {
-//         // console.log(id)
-//         idDoPokemonClicado = id
-//     }
-// }
-
 
 
 function loadPokemonItems(offset, limit) {
@@ -38,17 +31,6 @@ function loadPokemonItems(offset, limit) {
         `).join('')
 
         pokemonList.innerHTML += newHtml
-
-        // pokemons.forEach((pokemon) => {
-        //     const elementoPokemon = document.getElementById(pokemon.number);
-        //     if (elementoPokemon) {
-        //         elementoPokemon.addEventListener('click', () => {
-        //             // event.preventDefault();
-        //             idDoPokemonClicado = pokemon.number;
-        //             // idPoke(idDoPokemonClicado);
-        //         });
-        //     }
-        // });
     });
 }
 
